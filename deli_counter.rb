@@ -6,4 +6,9 @@ def take_a_number(deli, name)
 end
 
 def line(deli)
-  deli.each{|name|
+  if line.size == 0 
+    puts "The line is currently empty."
+  else
+    
+  end 
+end 
