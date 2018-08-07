@@ -20,6 +20,6 @@ def take_a_number(deli, name)
   return "Welcome, #{name}. You are number #{deli.size + 1} in line."
 end 
 
-def now servering(deli)
+def now_serving(deli)
   return "Currently serving #{deli.shift}."
 end 
