@@ -6,4 +6,4 @@ def take_a_number(deli, name)
 end
 
 def line(deli)
-  deli.each 
+  deli.each{|name|
