@@ -10,8 +10,8 @@ def line(deli)
     puts "The line is currently empty."
   else
     result = []
-    deli.each{|name| result << "The line is currently: #{deli.index(name)+1}. #{name}"}
-    puts result.join(" ")
+    deli.each{|name| result << "#{deli.index(name)+1}. #{name}"}
+    puts "The line is currently: #{result.join(" ")}"
   end 
 end 
 
