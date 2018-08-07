@@ -2,7 +2,7 @@
 
 def take_a_number(deli, name)
   deli << name
-  puts "Welcome, #{name}. You are number #{deli.size} in line."
+  return "Welcome, #{name}. You are number #{deli.size} in line."
 end
 
 def line(deli)
@@ -13,4 +13,13 @@ def line(deli)
     deli.each{|name| result << "#{deli.index(name)}. #{name}"}
     return result.join(" ")
   end 
+end 
+
+def take_a_number(deli, name)
+  deli << name
+  return "Welcome, #{name}. You are number #{deli.index(name)+1} in line."
+end 
+
+def now servering(deli)
+  return "Currently serving #{deli.shift}."
 end 
